@@ -33,7 +33,7 @@ This repository contains the complete product lifecycle workflow - from discover
 ├── design-framework/           # Complete text-based design system (Wireframes → Components → Interactions)
 ├── codebase-framework/         # Development framework templates (architecture, coding standards, testing)
 ├── features/                   # Feature specifications (PRD → UAT → Design → Code)
-└── archive/                    # Backup files
+└── documentation/              # documentation files
 ```
 
 **Sample Project:** The [features/one-api-portal-mvp](features/one-api-portal-mvp) folder contains a complete example of the framework in action - from PRD to working code.
