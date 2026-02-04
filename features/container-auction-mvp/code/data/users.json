@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "password123",
+        "avatar": null,
+        "role": "seller"
+    },
+    {
+        "id": "2",
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "password": "password123",
+        "avatar": null,
+        "role": "buyer"
+    },
+    {
+        "id": "3",
+        "name": "Bob Wilson",
+        "email": "bob@example.com",
+        "password": "password123",
+        "avatar": null,
+        "role": "seller"
+    },
+    {
+        "id": "4",
+        "name": "Alice Johnson",
+        "email": "alice@example.com",
+        "password": "password123",
+        "avatar": null,
+        "role": "maintenance_provider"
+    },
+    {
+        "id": "5",
+        "name": "Demo User",
+        "email": "demo@containermarket.com",
+        "password": "demo123",
+        "avatar": null,
+        "role": "seller"
+    },
+    {
+        "id": "6",
+        "name": "Karl Nguyen",
+        "email": "karl@vxsolutions.tech",
+        "password": "abc123!",
+        "avatar": null,
+        "role": "seller"
+    }
+]

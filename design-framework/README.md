@@ -6,16 +6,20 @@ The **Design Framework** provides a complete, text-based design system for creat
 
 **Philosophy:** Design through text and ASCII art, leverage AI assistance, maintain traceability from requirements to implementation.
 
+**Version:** 2.0.0 - Multi-Theme System with ui-ux-pro-max Integration
+
 ---
 
 ## Why This Framework?
 
 - **No design tools required:** Uses text descriptions and ASCII wireframes
-- **AI-friendly:** Optimized for AI-assisted design work
+- **AI-friendly:** Optimized for AI-assisted design work with ui-ux-pro-max integration
+- **Multi-theme support:** 4 production-ready themes (MDS, Corporate, Ecommerce, ERP)
 - **Complete traceability:** Links wireframes → components → interactions → code
 - **ShadCN UI integration:** Built around ShadCN UI component library
 - **Tanstack Table support:** Comprehensive table specifications
 - **Accessible by default:** WCAG AA compliance built into design rules
+- **AI-powered code generation:** Ready-to-use prompts for ui-ux-pro-max skill
 
 ---
 
@@ -24,23 +28,29 @@ The **Design Framework** provides a complete, text-based design system for creat
 ```
 design-framework/
 ├── README.md                      # This file
+├── QUICK_START.md                 # Quick start guide
 ├── design-workflow.md             # Complete workflow guide
+├── UI_UX_PROMAX_INTEGRATION.md    # ui-ux-pro-max integration guide
 │
-├── design-rules/                  # Design system rules
-│   ├── color-system.md
-│   ├── animation-system.md        # MDS animation patterns
-│   ├── spacing-system.md
-│   ├── typography.md
-│   ├── layout-system.md
-│   ├── component-standards.md
-│   ├── accessibility.md
-│   ├── responsive-design.md
-│   └── naming-conventions.md
+├── themes/                        # Theme catalog (NEW in v2.0)
+│   ├── README.md                  # Theme selection guide
+│   ├── template.md                # Blank theme template
+│   ├── mds.md                     # MDS theme (DEFAULT)
+│   ├── corporate.md               # Corporate/B2B theme
+│   ├── ecommerce.md               # Ecommerce/Retail theme
+│   └── erp.md                     # ERP/Dashboard theme
+│
+├── design-rules/                  # Universal design standards
+│   ├── README.md                  # Overview of universal vs theme-specific rules
+│   ├── accessibility.md           # WCAG AA/AAA compliance (universal)
+│   ├── responsive.md              # Breakpoints, mobile-first (universal)
+│   ├── naming-conventions.md      # File, component naming (universal)
+│   └── code-standards.md          # TypeScript, component patterns (universal)
 │
 ├── stage1-wireframes/             # Text + ASCII wireframes
 │   ├── rules.md
-│   ├── template-text-wireframe.md
-│   ├── template-ascii-wireframe.md
+│   ├── template-text-wireframe.md # (Updated with theme support)
+│   ├── template-ascii-wireframe.md # (Updated with theme support)
 │   ├── examples.md
 │   ├── prompts.md
 │   └── quality-gate.md
@@ -49,8 +59,8 @@ design-framework/
 │   ├── rules.md
 │   ├── shadcn-component-catalog.md
 │   ├── tanstack-table-reference.md
-│   ├── template-component-spec.md
-│   ├── template-table-spec.md
+│   ├── template-component-spec.md # (Updated with ui-ux-pro-max prompts)
+│   ├── template-table-spec.md     # (Updated with ui-ux-pro-max prompts)
 │   ├── examples.md
 │   ├── prompts.md
 │   └── quality-gate.md
@@ -58,7 +68,7 @@ design-framework/
 ├── stage3-interactions/           # State diagrams & flows
 │   ├── rules.md
 │   ├── template-state-diagram.md
-│   ├── template-interaction-flow.md
+│   ├── template-interaction-flow.md # (Updated with theme animations)
 │   ├── examples.md
 │   ├── prompts.md
 │   └── quality-gate.md
@@ -71,6 +81,7 @@ design-framework/
 │   └── modal-template.md
 │
 └── patterns/                      # Common UI patterns
+    ├── README.md                  # (Updated with ui-ux-pro-max prompts)
     ├── navigation-patterns.md
     ├── form-patterns.md
     ├── feedback-patterns.md
@@ -80,14 +91,44 @@ design-framework/
 
 ---
 
+## Theme Selection (Step 0)
+
+**Before starting the design process, choose a theme from the catalog:**
+
+### Available Themes
+
+1. **MDS Theme (Default)** - Modern, bold, brand-focused
+   - Colors: Magenta (#bd1874) primary, Teal (#004d6c) secondary
+   - Use case: Brand-focused applications, marketing sites, hero sections
+   - [Full spec](themes/mds.md)
+
+2. **Corporate Theme** - Professional, trust-focused, enterprise
+   - Colors: Trust Teal (#0F766E) primary, Professional Blue (#0369A1) CTA
+   - Use case: B2B platforms, professional services, enterprise gateways
+   - [Full spec](themes/corporate.md)
+
+3. **Ecommerce Theme** - Vibrant, conversion-optimized, engaging
+   - Colors: Gold Trust (#F59E0B) primary, Purple Tech (#8B5CF6) CTA
+   - Use case: Online stores, product catalogs, checkout flows
+   - [Full spec](themes/ecommerce.md)
+
+4. **ERP Theme** - Data-dense, efficient, dashboard-focused
+   - Colors: Blue Data (#1E40AF) primary, Amber Highlights (#F59E0B) CTA
+   - Use case: Business intelligence, admin dashboards, analytics tools
+   - [Full spec](themes/erp.md)
+
+**See [themes/README.md](themes/README.md) for complete theme selection guide.**
+
+---
+
 ## Three-Stage Design Process
 
 ### Stage 1: Wireframes (Text + ASCII)
 
 **Input:** User Story Details (`usd/*.md`) with Acceptance Criteria
-**Output:** Wireframes (WF-XXX)
+**Output:** Wireframes (WF-XXX) with theme reference
 
-**Purpose:** Translate acceptance criteria into visual layout using text descriptions and ASCII art.
+**Purpose:** Translate acceptance criteria into visual layout using text descriptions and ASCII art, applying selected theme constraints.
 
 **Deliverables:**
 - Text description of layout and UI elements
@@ -116,6 +157,8 @@ ASCII:
 
 **Templates:** form-layout, list-view, detail-view, dashboard, modal
 
+**Theme Integration:** Each wireframe references the selected theme for color, typography, and layout guidance.
+
 **Documentation:** [stage1-wireframes/](stage1-wireframes/)
 
 ---
@@ -123,9 +166,9 @@ ASCII:
 ### Stage 2: Component Specifications (ShadCN + Tanstack Table)
 
 **Input:** Approved wireframes (WF-XXX)
-**Output:** Component specs (COMP-XXX), Table specs (TBL-XXX)
+**Output:** Component specs (COMP-XXX), Table specs (TBL-XXX) with ui-ux-pro-max prompts
 
-**Purpose:** Define which ShadCN components to use and how to configure them. For tables, provide full Tanstack Table configuration.
+**Purpose:** Define which ShadCN components to use and how to configure them. For tables, provide full Tanstack Table configuration. Each spec includes a ready-to-use ui-ux-pro-max prompt for code generation.
 
 **Deliverables:**
 - Component specs with ShadCN component names, variants, props, states
@@ -137,6 +180,15 @@ ASCII:
 **Example:**
 ```
 COMP-001: Login Form
+Theme Reference: mds
+
+ui-ux-pro-max Prompt:
+Generate Login Form component using MDS theme:
+- Pattern: Form Pattern (form-patterns.md)
+- Theme Constraints: Magenta primary, Teal secondary, Inter font
+- Anti-Patterns: No generic error messages, no missing validation
+- Requirements: Email input, password input, submit button
+- ShadCN Components: Card, Input, Button, Form
 
 Element 1: Email Input
 - Component: Input (ShadCN)
@@ -146,6 +198,8 @@ Element 1: Email Input
 - States: default, focus, error
 - Validation: Required, email format
 ```
+
+**ui-ux-pro-max Integration:** Each component spec includes a prompt template for generating implementation code with theme constraints.
 
 **Simple Component References:** No code snippets, just component names and variants
 
@@ -158,9 +212,9 @@ Element 1: Email Input
 ### Stage 3: Interactions (State Diagrams)
 
 **Input:** Approved component specs (COMP-XXX)
-**Output:** Interaction specs (INT-XXX)
+**Output:** Interaction specs (INT-XXX) with theme animation constraints
 
-**Purpose:** Document how components behave, state transitions, user flows using ASCII state diagrams.
+**Purpose:** Document how components behave, state transitions, user flows using ASCII state diagrams. Each interaction references theme-specific animation standards.
 
 **Deliverables:**
 - ASCII state diagrams showing all states and transitions
@@ -188,21 +242,33 @@ State Diagram:
 
 ## Design Rules (Foundation)
 
-The **design-rules/** folder contains the design system rules that apply to all stages:
+**Version 2.0 Change:** Design rules are now split into **universal standards** (apply to all themes) and **theme-specific rules** (defined per theme).
 
-1. **Color System:** MDS brand colors (Magenta, Teal, Teal Accent), ShadCN theme colors, CSS variables
-2. **Animation System:** MDS animations (reveal-up, scroll-reveal, beams, marquee), timing functions
-3. **Spacing System:** 4px base unit, spacing scale, component spacing
-4. **Typography:** Text sizes, font weights, heading hierarchy
-5. **Layout System:** Container widths, responsive breakpoints, grid/flexbox
-6. **Component Standards:** ShadCN component variants, sizing, states, animations
-7. **Accessibility:** WCAG AA compliance, keyboard nav, screen readers, reduced motion
-8. **Responsive Design:** Mobile-first, breakpoint behavior, adaptive layouts
-9. **Naming Conventions:** Component, file, ID naming standards
+### Universal Standards (design-rules/)
 
-**All wireframes, component specs, and interactions must follow these rules.**
+These apply to ALL themes and ALL projects:
+
+1. **Accessibility:** WCAG AA/AAA compliance, keyboard nav, screen readers, ARIA patterns, reduced motion
+2. **Responsive Design:** Breakpoints (375px, 768px, 1024px, 1440px), mobile-first, touch targets
+3. **Naming Conventions:** Component naming (PascalCase), file naming (kebab-case), directory structure
+4. **Code Standards:** TypeScript patterns, prop interfaces, component composition, error handling
 
 **Documentation:** [design-rules/](design-rules/)
+
+### Theme-Specific Rules (themes/)
+
+These vary by selected theme:
+
+1. **Color System:** Primary, secondary, accent colors (defined per theme)
+2. **Typography:** Font families, sizes, weights (defined per theme)
+3. **Spacing System:** Base unit, spacing scale (defined per theme)
+4. **Animation System:** Entry animations, hover effects, timing (defined per theme)
+5. **Visual Style:** Component defaults, layout patterns (defined per theme)
+6. **Anti-Patterns:** Theme-specific patterns to avoid (defined per theme)
+
+**Documentation:** [themes/](themes/)
+
+**All wireframes, component specs, and interactions must follow universal standards + selected theme rules.**
 
 ---
 
@@ -282,7 +348,28 @@ Each stage has quality gates that must pass before proceeding:
 
 ---
 
-## AI Assistance
+## AI Assistance & ui-ux-pro-max Integration
+
+### ui-ux-pro-max Skill (Recommended)
+
+The framework is optimized for the **ui-ux-pro-max** skill, which generates production-ready code from design specs.
+
+**Integration Guide:** [UI_UX_PROMAX_INTEGRATION.md](UI_UX_PROMAX_INTEGRATION.md)
+
+**Workflow:**
+1. Create component spec with theme reference
+2. Fill ui-ux-pro-max prompt template (included in spec)
+3. Invoke `/ui-ux-pro-max` with filled prompt
+4. Generated code follows theme constraints automatically
+5. Validate against component spec requirements
+
+**Benefits:**
+- Theme-aware code generation
+- Consistent styling across components
+- Built-in accessibility compliance
+- ShadCN UI component integration
+
+### Traditional AI Prompts
 
 Each stage includes AI prompts for generating specifications:
 
@@ -328,41 +415,60 @@ Reference patterns for common UI challenges:
 
 ## Getting Started
 
-1. **Read the workflow:** [design-workflow.md](design-workflow.md)
-2. **Understand design rules:** [design-rules/](design-rules/)
-3. **Review examples:**
+1. **Choose a theme:** [themes/README.md](themes/README.md) - Select from MDS (default), Corporate, Ecommerce, or ERP
+2. **Learn ui-ux-pro-max integration:** [UI_UX_PROMAX_INTEGRATION.md](UI_UX_PROMAX_INTEGRATION.md)
+3. **Read the workflow:** [design-workflow.md](design-workflow.md) or [QUICK_START.md](QUICK_START.md)
+4. **Understand universal standards:** [design-rules/](design-rules/)
+5. **Review examples:**
    - [Wireframe examples](stage1-wireframes/examples.md)
    - [Component spec examples](stage2-component-specs/examples.md)
    - [Interaction examples](stage3-interactions/examples.md)
-4. **Use templates:** Pick appropriate template from [templates/](templates/)
-5. **Follow the stages:** Wireframes → Components → Interactions
-6. **Pass quality gates:** Validate before moving to next stage
+6. **Use templates:** Pick appropriate template from [templates/](templates/)
+7. **Follow the stages:** Theme Selection → Wireframes → Components → Interactions
+8. **Pass quality gates:** Validate before moving to next stage
 
 ---
 
 ## Quick Start Example
 
-**Scenario:** Design a login form
+**Scenario:** Design a login form for a B2B SaaS application
 
-1. **Stage 1:** Create wireframe (WF-001) from acceptance criteria
-   - Use [form-layout-template.md](templates/form-layout-template.md)
-   - Draw ASCII wireframe
-   - List components needed: Input, Button, Checkbox
+**Step 0: Theme Selection**
+- Choose **Corporate theme** (professional, trust-focused)
+- Reference: [themes/corporate.md](themes/corporate.md)
 
-2. **Stage 2:** Create component spec (COMP-001)
-   - Map wireframe elements to ShadCN components
-   - Specify variants: Button variant="default"
-   - Define validation rules for email and password
-   - Document all states: default, loading, error, success
+**Step 1: Wireframes (WF-001)**
+- Use [form-layout-template.md](templates/form-layout-template.md)
+- Add theme reference: `Theme: corporate`
+- Draw ASCII wireframe
+- List components needed: Input, Button, Checkbox
+- Apply Corporate theme patterns (professional layout, trust colors)
 
-3. **Stage 3:** Create interaction spec (INT-001)
-   - Draw state diagram: Idle → Validating → Submitting → Success/Error
-   - Document transitions and triggers
-   - Define error handling and recovery paths
+**Step 2: Component Spec (COMP-001)**
+- Map wireframe elements to ShadCN components
+- Add theme reference: `Theme Reference: corporate`
+- Fill ui-ux-pro-max prompt with Corporate theme constraints
+- Specify variants: Button variant="default" with Professional Blue (#0369A1)
+- Define validation rules for email and password
+- Document all states: default, loading, error, success
 
-4. **Quality Gates:** Validate each stage passes before proceeding
+**Step 3: Interaction Spec (INT-001)**
+- Add theme animation constraints (Corporate: subtle 300ms transitions)
+- Draw state diagram: Idle → Validating → Submitting → Success/Error
+- Document transitions with Corporate animation timing
+- Define error handling and recovery paths
 
-5. **Handoff to Dev:** All specs ready for implementation
+**Step 4: Code Generation with ui-ux-pro-max**
+- Copy ui-ux-pro-max prompt from COMP-001
+- Invoke: `/ui-ux-pro-max` with filled prompt
+- Generated code follows Corporate theme automatically
+
+**Step 5: Quality Gates**
+- Validate each stage passes before proceeding
+- Verify theme constraints applied correctly
+
+**Step 6: Handoff to Dev**
+- All specs ready for implementation with theme-specific code
 
 ---
 

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "c1",
+        "number": "MSKU1234567",
+        "type": "20ft Standard",
+        "condition": "Used - B",
+        "location": "Rotterdam",
+        "ownerId": "u2"
+    },
+    {
+        "id": "c2",
+        "number": "MSKU9876543",
+        "type": "40ft High Cube",
+        "condition": "New",
+        "location": "Shanghai",
+        "ownerId": "u2"
+    },
+    {
+        "id": "c3",
+        "number": "MSKU5555555",
+        "type": "20ft Standard",
+        "condition": "Damaged",
+        "location": "Hamburg",
+        "ownerId": "u2"
+    }
+]

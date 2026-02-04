@@ -1,0 +1,463 @@
+[
+    {
+        "id": "1",
+        "containerId": "MSKU1234567",
+        "type": "sale",
+        "title": "20ft Standard Dry Container - New",
+        "description": "Brand new 20ft standard dry container, never used. Perfect for storage or shipping.",
+        "price": 2800,
+        "quantity": 5,
+        "location": "Los Angeles, CA",
+        "condition": "New",
+        "status": "active",
+        "sellerId": "2",
+        "createdAt": "2026-01-15T10:00:00Z",
+        "images": [
+            "container-new-20ft-1.jpg"
+        ]
+    },
+    {
+        "id": "2",
+        "containerId": "TGHU9876543",
+        "type": "auction",
+        "title": "40ft High Cube - Used Grade A",
+        "description": "Excellent condition 40ft high cube container. One-trip use only. Minimal wear.",
+        "currentBid": 3250,
+        "startingBid": 2500,
+        "quantity": 1,
+        "location": "Hamburg, Germany",
+        "condition": "Used - A",
+        "status": "active",
+        "endsAt": "2026-02-08T18:00:00Z",
+        "sellerId": "2",
+        "createdAt": "2026-02-01T09:00:00Z",
+        "images": [
+            "container-hc-40ft-1.jpg",
+            "container-hc-40ft-2.jpg"
+        ]
+    },
+    {
+        "id": "3",
+        "containerId": "CXDU5554443",
+        "type": "sale",
+        "title": "20ft Refrigerated Container (Reefer)",
+        "description": "Working refrigeration unit, temperature range -25°C to +25°C. Recent service completed.",
+        "price": 8500,
+        "quantity": 2,
+        "location": "Singapore",
+        "condition": "Used - A",
+        "status": "active",
+        "sellerId": "3",
+        "createdAt": "2026-01-20T14:30:00Z",
+        "images": [
+            "reefer-20ft-1.jpg",
+            "reefer-20ft-interior.jpg"
+        ]
+    },
+    {
+        "id": "4",
+        "containerId": "HLBU2223344",
+        "type": "sale",
+        "title": "40ft Standard Dry - Damaged (As-Is)",
+        "description": "Structural damage to side panel. Sold as-is for parts or repair. No warranty.",
+        "price": 900,
+        "quantity": 1,
+        "location": "Rotterdam, Netherlands",
+        "condition": "Damaged",
+        "status": "active",
+        "sellerId": "2",
+        "createdAt": "2026-01-25T11:00:00Z",
+        "images": [
+            "damaged-40ft-1.jpg",
+            "damaged-40ft-side.jpg"
+        ]
+    },
+    {
+        "id": "5",
+        "containerId": "MSCU7788990",
+        "type": "auction",
+        "title": "20ft Open Top Container - Good Condition",
+        "description": "Ideal for oversized cargo. Removable tarpaulin roof. Well-maintained.",
+        "currentBid": 2100,
+        "startingBid": 1800,
+        "quantity": 1,
+        "location": "Shanghai, China",
+        "condition": "Used - B",
+        "status": "active",
+        "endsAt": "2026-02-06T12:00:00Z",
+        "sellerId": "3",
+        "createdAt": "2026-01-28T08:00:00Z",
+        "images": [
+            "opentop-20ft-1.jpg"
+        ]
+    },
+    {
+        "id": "6",
+        "containerId": "TCLU4455667",
+        "type": "sale",
+        "title": "40ft High Cube - New (Bulk Available)",
+        "description": "Factory fresh 40ft high cube containers. Bulk pricing available for 10+ units.",
+        "price": 4200,
+        "quantity": 25,
+        "location": "Shenzhen, China",
+        "condition": "New",
+        "status": "active",
+        "sellerId": "5",
+        "createdAt": "2026-01-10T07:00:00Z",
+        "images": [
+            "new-hc-40ft-bulk.jpg",
+            "new-hc-40ft-interior.jpg"
+        ]
+    },
+    {
+        "id": "7",
+        "containerId": "OOLU1122334",
+        "type": "sale",
+        "title": "20ft Flat Rack Container",
+        "description": "Collapsible flat rack for heavy machinery transport. Certified for international shipping.",
+        "price": 3200,
+        "quantity": 3,
+        "location": "Dubai, UAE",
+        "condition": "Used - A",
+        "status": "active",
+        "sellerId": "4",
+        "createdAt": "2026-01-18T13:00:00Z",
+        "images": [
+            "flatrack-20ft-1.jpg",
+            "flatrack-20ft-folded.jpg"
+        ]
+    },
+    {
+        "id": "8",
+        "containerId": "CMAU9988776",
+        "type": "auction",
+        "title": "40ft Refrigerated High Cube - Premium",
+        "description": "Top-tier reefer with advanced climate control. Low hours on compressor.",
+        "currentBid": 12500,
+        "startingBid": 10000,
+        "quantity": 1,
+        "location": "Miami, FL",
+        "condition": "Used - A",
+        "status": "active",
+        "endsAt": "2026-02-10T20:00:00Z",
+        "sellerId": "1",
+        "createdAt": "2026-02-02T10:00:00Z",
+        "images": [
+            "reefer-hc-40ft-1.jpg",
+            "reefer-hc-40ft-unit.jpg",
+            "reefer-hc-40ft-interior.jpg"
+        ]
+    },
+    {
+        "id": "9",
+        "containerId": "MAEU5566778",
+        "type": "sale",
+        "title": "20ft Tank Container - Food Grade",
+        "description": "Stainless steel tank container for liquid transport. Food-grade certified.",
+        "price": 6800,
+        "quantity": 1,
+        "location": "Antwerp, Belgium",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "3",
+        "createdAt": "2026-01-22T15:00:00Z",
+        "images": [
+            "tank-20ft-1.jpg",
+            "tank-20ft-valve.jpg"
+        ]
+    },
+    {
+        "id": "10",
+        "containerId": "SUDU3344556",
+        "type": "sale",
+        "title": "40ft Standard Dry - Wind & Water Tight",
+        "description": "Certified wind and water tight. Ideal for secure storage. Minor cosmetic wear.",
+        "price": 2200,
+        "quantity": 8,
+        "location": "Melbourne, Australia",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "2",
+        "createdAt": "2026-01-12T09:30:00Z",
+        "images": [
+            "standard-40ft-wwt.jpg"
+        ]
+    },
+    {
+        "id": "11",
+        "containerId": "TRHU6677889",
+        "type": "auction",
+        "title": "20ft Offshore Container - DNV Certified",
+        "description": "DNV 2.7-1 certified offshore container. Suitable for oil & gas industry.",
+        "currentBid": 4500,
+        "startingBid": 3800,
+        "quantity": 1,
+        "location": "Aberdeen, UK",
+        "condition": "Used - A",
+        "status": "active",
+        "endsAt": "2026-02-07T16:00:00Z",
+        "sellerId": "4",
+        "createdAt": "2026-01-30T11:00:00Z",
+        "images": [
+            "offshore-20ft-1.jpg",
+            "offshore-20ft-cert.jpg"
+        ]
+    },
+    {
+        "id": "12",
+        "containerId": "GESU8899001",
+        "type": "sale",
+        "title": "40ft Open Side Container",
+        "description": "Full-length side opening for easy loading. Perfect for bulky cargo.",
+        "price": 3800,
+        "quantity": 2,
+        "location": "Busan, South Korea",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "5",
+        "createdAt": "2026-01-16T12:00:00Z",
+        "images": [
+            "openside-40ft-1.jpg",
+            "openside-40ft-open.jpg"
+        ]
+    },
+    {
+        "id": "13",
+        "containerId": "NYKU1122445",
+        "type": "sale",
+        "title": "20ft Standard Dry - Cargo Worthy",
+        "description": "Cargo worthy certified. Ready for immediate international shipping.",
+        "price": 1850,
+        "quantity": 12,
+        "location": "Savannah, GA",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "1",
+        "createdAt": "2026-01-08T08:00:00Z",
+        "images": [
+            "cw-20ft-1.jpg",
+            "cw-20ft-cert.jpg"
+        ]
+    },
+    {
+        "id": "14",
+        "containerId": "PONU3344667",
+        "type": "auction",
+        "title": "40ft Insulated Container - Non-Powered",
+        "description": "Insulated but non-refrigerated. Great for temperature-sensitive dry goods.",
+        "currentBid": 2800,
+        "startingBid": 2200,
+        "quantity": 1,
+        "location": "Vancouver, Canada",
+        "condition": "Used - A",
+        "status": "active",
+        "endsAt": "2026-02-09T14:00:00Z",
+        "sellerId": "3",
+        "createdAt": "2026-02-03T09:00:00Z",
+        "images": [
+            "insulated-40ft-1.jpg",
+            "insulated-40ft-interior.jpg"
+        ]
+    },
+    {
+        "id": "15",
+        "containerId": "CSQU5566889",
+        "type": "sale",
+        "title": "20ft Pallet Wide Container",
+        "description": "Extra width for standard pallets. Maximizes cargo space efficiency.",
+        "price": 3100,
+        "quantity": 4,
+        "location": "Felixstowe, UK",
+        "condition": "Used - A",
+        "status": "active",
+        "sellerId": "2",
+        "createdAt": "2026-01-14T10:30:00Z",
+        "images": [
+            "palletwide-20ft-1.jpg"
+        ]
+    },
+    {
+        "id": "16",
+        "containerId": "MSKU7788112",
+        "type": "sale",
+        "title": "40ft High Cube - One Trip",
+        "description": "Single voyage use only. Essentially new condition. Premium quality.",
+        "price": 4800,
+        "quantity": 6,
+        "location": "Long Beach, CA",
+        "condition": "Used - A",
+        "status": "active",
+        "sellerId": "5",
+        "createdAt": "2026-01-11T07:30:00Z",
+        "images": [
+            "onetrip-hc-40ft-1.jpg",
+            "onetrip-hc-40ft-2.jpg"
+        ]
+    },
+    {
+        "id": "17",
+        "containerId": "HLCU9900223",
+        "type": "auction",
+        "title": "20ft Dangerous Goods Container - Certified",
+        "description": "IMO-certified for hazardous materials. Full documentation included.",
+        "currentBid": 3600,
+        "startingBid": 3000,
+        "quantity": 1,
+        "location": "Jebel Ali, UAE",
+        "condition": "Used - A",
+        "status": "active",
+        "endsAt": "2026-02-11T10:00:00Z",
+        "sellerId": "4",
+        "createdAt": "2026-02-04T08:00:00Z",
+        "images": [
+            "dg-20ft-1.jpg",
+            "dg-20ft-placards.jpg"
+        ]
+    },
+    {
+        "id": "18",
+        "containerId": "TCNU4455778",
+        "type": "sale",
+        "title": "40ft Standard Dry - Budget Grade",
+        "description": "Functional but showing age. Perfect for stationary storage. Wind & water tight.",
+        "price": 1650,
+        "quantity": 15,
+        "location": "Ho Chi Minh City, Vietnam",
+        "condition": "Used - C",
+        "status": "active",
+        "sellerId": "6",
+        "createdAt": "2026-01-05T06:00:00Z",
+        "images": [
+            "budget-40ft-1.jpg"
+        ]
+    },
+    {
+        "id": "19",
+        "containerId": "OOLU6677990",
+        "type": "sale",
+        "title": "20ft Ventilated Container",
+        "description": "Passive ventilation system. Ideal for coffee, cocoa, or other breathable cargo.",
+        "price": 2400,
+        "quantity": 3,
+        "location": "Santos, Brazil",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "3",
+        "createdAt": "2026-01-19T11:00:00Z",
+        "images": [
+            "ventilated-20ft-1.jpg",
+            "ventilated-20ft-vents.jpg"
+        ]
+    },
+    {
+        "id": "20",
+        "containerId": "CMAU1122556",
+        "type": "auction",
+        "title": "40ft Double Door Container",
+        "description": "Doors on both ends for through-loading. Very convenient for warehousing.",
+        "currentBid": 2950,
+        "startingBid": 2400,
+        "quantity": 1,
+        "location": "Auckland, New Zealand",
+        "condition": "Used - B",
+        "status": "active",
+        "endsAt": "2026-02-12T15:00:00Z",
+        "sellerId": "2",
+        "createdAt": "2026-02-05T07:00:00Z",
+        "images": [
+            "doubledoor-40ft-1.jpg",
+            "doubledoor-40ft-both.jpg"
+        ]
+    },
+    {
+        "id": "21",
+        "containerId": "MAEU3344778",
+        "type": "sale",
+        "title": "20ft Standard Dry - Refurbished",
+        "description": "Professionally refurbished. New paint, repaired floor. Like-new condition.",
+        "price": 2400,
+        "quantity": 7,
+        "location": "Kaohsiung, Taiwan",
+        "condition": "Used - A",
+        "status": "active",
+        "sellerId": "5",
+        "createdAt": "2026-01-13T09:00:00Z",
+        "images": [
+            "refurb-20ft-1.jpg",
+            "refurb-20ft-interior.jpg"
+        ]
+    },
+    {
+        "id": "22",
+        "containerId": "SUDU5566990",
+        "type": "sale",
+        "title": "40ft High Cube - Modified Office",
+        "description": "Converted to office space. Windows, insulation, electrical installed.",
+        "price": 7500,
+        "quantity": 1,
+        "location": "Perth, Australia",
+        "condition": "Modified",
+        "status": "active",
+        "sellerId": "4",
+        "createdAt": "2026-01-21T14:00:00Z",
+        "images": [
+            "office-hc-40ft-1.jpg",
+            "office-hc-40ft-interior.jpg",
+            "office-hc-40ft-desk.jpg"
+        ]
+    },
+    {
+        "id": "23",
+        "containerId": "TRHU7788223",
+        "type": "auction",
+        "title": "20ft Half Height Container",
+        "description": "Half-height for heavy cargo like coal or ore. Reinforced floor.",
+        "currentBid": 1800,
+        "startingBid": 1500,
+        "quantity": 1,
+        "location": "Durban, South Africa",
+        "condition": "Used - B",
+        "status": "active",
+        "endsAt": "2026-02-13T11:00:00Z",
+        "sellerId": "3",
+        "createdAt": "2026-02-06T06:00:00Z",
+        "images": [
+            "halfheight-20ft-1.jpg"
+        ]
+    },
+    {
+        "id": "24",
+        "containerId": "GESU9900445",
+        "type": "sale",
+        "title": "40ft Refrigerated - Standard",
+        "description": "Standard reefer unit. Well-maintained. Temperature logs available.",
+        "price": 9200,
+        "quantity": 2,
+        "location": "Yokohama, Japan",
+        "condition": "Used - B",
+        "status": "active",
+        "sellerId": "1",
+        "createdAt": "2026-01-17T10:00:00Z",
+        "images": [
+            "reefer-40ft-1.jpg",
+            "reefer-40ft-unit.jpg"
+        ]
+    },
+    {
+        "id": "25",
+        "containerId": "NYKU2233667",
+        "type": "sale",
+        "title": "20ft Standard Dry - As-Is Sale",
+        "description": "Minor rust and dents. Functional for storage. Priced to move quickly.",
+        "price": 1200,
+        "quantity": 20,
+        "location": "Norfolk, VA",
+        "condition": "Used - C",
+        "status": "active",
+        "sellerId": "6",
+        "createdAt": "2026-01-06T08:30:00Z",
+        "images": [
+            "asis-20ft-1.jpg"
+        ]
+    }
+]

@@ -6,8 +6,54 @@
 **Story ID(s):** ST-XXX
 **Acceptance Criteria IDs:** AC-XXX, AC-XXX, AC-XXX
 **Component Type:** Form | Card | Modal | Navigation | Detail | List | Other
+**Theme Reference:** [mds | corporate | ecommerce | erp]
+**Theme File:** [Link to theme specification, e.g., ../themes/mds.md]
 **Created:** [Date]
 **Last Updated:** [Date]
+
+---
+
+## ui-ux-pro-max Prompt
+
+Use this prompt to generate implementation code with ui-ux-pro-max:
+
+```
+Generate [Component Name] component using [Theme Name] theme:
+
+**Pattern:** [Reference to pattern, e.g., "Form Pattern (form-patterns.md)"]
+
+**Theme Constraints:**
+- Colors: [Copy from theme file - primary, secondary, accents]
+- Typography: [Copy from theme file - font families, sizes]
+- Spacing: [Copy from theme file - padding, margins, gaps]
+- Animations: [Copy from theme file - hover, transitions, entry animations]
+- Style: [Copy from theme file - visual style description]
+
+**Anti-Patterns to Avoid:**
+- [List anti-patterns from theme file specific to this component type]
+
+**Requirements:**
+- Layout: [Specific layout requirements from this spec]
+- Elements: [List all UI elements from Section 3]
+- States: [List all states from Section 5]
+- Interactions: [List key interactions from Section 6]
+- Validation: [List validation rules from Section 7]
+- Accessibility: [List accessibility requirements from Section 8]
+
+**ShadCN Components:**
+- [List ShadCN components to use, e.g., "Card, Button, Input, Form"]
+
+**Implementation Notes:**
+- [Any specific technical notes from Section 11]
+```
+
+**Customization:**
+1. Replace `[Component Name]` with actual component name
+2. Replace `[Theme Name]` with selected theme
+3. Fill in theme constraints by copying from theme file
+4. Fill in requirements by copying from spec sections below
+5. Add component-specific anti-patterns
+6. Include any additional context or edge cases
 
 ---
 

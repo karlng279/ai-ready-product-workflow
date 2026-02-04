@@ -6,8 +6,67 @@
 **Wireframe ID(s):** WF-XXX
 **Story ID(s):** ST-XXX
 **Acceptance Criteria IDs:** AC-XXX, AC-XXX, AC-XXX
+**Theme Reference:** [mds | corporate | ecommerce | erp]
+**Theme File:** [Link to theme specification, e.g., ../themes/erp.md]
 **Created:** [Date]
 **Last Updated:** [Date]
+
+---
+
+## ui-ux-pro-max Prompt
+
+Use this prompt to generate table implementation with ui-ux-pro-max:
+
+```
+Generate [Table Name] using Tanstack Table and [Theme Name] theme:
+
+**Pattern:** Data Display - Tables (data-display-patterns.md)
+
+**Theme Constraints:**
+- Colors: [Copy from theme file - header bg, row hover, selected row, borders]
+- Typography: [Copy from theme file - header font, cell font, sizes]
+- Spacing: [Copy from theme file - cell padding, row height, table margins]
+- Style: [e.g., "Data-dense (ERP)", "Clean & organized (Corporate)", "Quick-scan (Ecommerce)"]
+
+**Anti-Patterns to Avoid:**
+- [Theme-specific anti-patterns, e.g., "No missing filters (ERP)", "No poor mobile tables (Ecommerce)"]
+
+**Table Structure:**
+- Columns: [List all columns from Section 3 with accessorKey, header, cell type]
+- Features: [e.g., "Multi-column sorting", "Global search", "Column filters", "Pagination", "Row selection"]
+- States: [Loading, Empty, Error from Section 8]
+
+**Data Configuration:**
+- API Endpoint: [From Section 2]
+- Data Type: [TypeScript type from Section 2]
+- Fetching: [Strategy from Section 2]
+
+**UI Requirements:**
+- Pagination: [Config from Section 6]
+- Sorting: [Config from Section 4]
+- Filtering: [Config from Section 5]
+- Selection: [Config from Section 7]
+- Responsive: [Approach from Section 10]
+
+**Accessibility:**
+- Keyboard navigation: [From Section 11]
+- ARIA attributes: [From Section 11]
+- Screen reader support: [From Section 11]
+
+**ShadCN Components:**
+- Table, TableHeader, TableBody, TableRow, TableHead, TableCell
+- Additional: [e.g., "Button, Input, Select, Badge, DropdownMenu, Checkbox, Alert, Skeleton"]
+
+**Implementation Notes:**
+- [Any specific notes from Section 14]
+```
+
+**Customization:**
+1. Replace `[Table Name]` and `[Theme Name]` with actual values
+2. Fill in theme constraints from selected theme file
+3. List all columns with their configurations
+4. Specify features enabled (sorting, filtering, pagination, selection)
+5. Include states and responsive behavior
 
 ---
 

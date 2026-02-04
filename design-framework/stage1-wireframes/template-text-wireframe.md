@@ -5,6 +5,24 @@
 **Story:** ST-XXX - [Story Title]
 **Addresses:** AC-XXX, AC-YYY, AC-ZZZ
 **Screen Type:** [Form | List | Detail | Dashboard | Modal]
+**Theme:** [mds | corporate | ecommerce | erp]
+**Theme File:** [Link to theme specification, e.g., ../themes/mds.md]
+
+---
+
+## Theme Context
+
+**Selected Theme:** [Theme Name]
+
+**Theme Impact on Design:**
+- **Visual Style:** [e.g., "Modern & bold (MDS)", "Professional & trust-focused (Corporate)", "Vibrant & conversion-optimized (Ecommerce)", "Data-dense & efficient (ERP)"]
+- **Color Approach:** [e.g., "Magenta accents on teal (MDS)", "Trust teal with professional blue CTAs (Corporate)"]
+- **Pattern References:** [e.g., "Top nav with mega menu (Corporate)", "Sticky header with cart badge (Ecommerce)", "Sidebar + compact header (ERP)"]
+- **Component Defaults:** [e.g., "Bold animations (MDS)", "Subtle transitions (Corporate)", "Quick feedback (Ecommerce)", "Minimal animations (ERP)"]
+
+**Consult:**
+- Theme file for color palette, typography, spacing, animation standards
+- [patterns/README.md](../patterns/README.md) for theme-adapted patterns
 
 ---
 

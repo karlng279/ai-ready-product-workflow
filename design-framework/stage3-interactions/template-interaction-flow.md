@@ -7,8 +7,84 @@
 **Story ID(s):** ST-XXX
 **Acceptance Criteria IDs:** AC-XXX, AC-XXX, AC-XXX
 **Interaction Type:** Form Flow | Modal Flow | Navigation Flow | Multi-Step | Data Table | Other
+**Theme Reference:** [mds | corporate | ecommerce | erp]
+**Theme File:** [Link to theme specification, e.g., ../themes/mds.md]
 **Created:** [Date]
 **Last Updated:** [Date]
+
+---
+
+## Theme Animation Constraints
+
+**Selected Theme:** [Theme Name]
+
+**Animation Standards (from theme):**
+- **Entry Animations:** [e.g., "MDS: animate-reveal (1s)", "Corporate: subtle fade (300ms)", "Ecommerce: quick transitions (200ms)", "ERP: minimal animations (150ms)"]
+- **Hover/Interaction:** [e.g., "200ms transitions", "shadow changes", "scale effects"]
+- **State Transitions:** [e.g., "Loading spinners", "success animations", "error shakes"]
+- **Reduced Motion:** [Always provide instant alternatives for accessibility]
+
+**Relevant Theme Animations for This Flow:**
+- [List specific animations from theme file that apply to this interaction]
+- [e.g., "Form submission: success checkmark scale-in (MDS)", "Modal open: fade + scale (Corporate)"]
+
+**Reference:** See theme file Section 5 (Animations) for full specifications
+
+---
+
+## ui-ux-pro-max Prompt
+
+Use this prompt to generate interaction implementation with ui-ux-pro-max:
+
+```
+Implement [Interaction Name] using [Theme Name] theme:
+
+**Pattern:** [Interaction type, e.g., "Form Flow", "Multi-Step Wizard", "Modal Flow"]
+
+**Theme Constraints:**
+- Colors: [State colors - success, error, loading, disabled]
+- Animations: [Entry, transition, state change animations from theme]
+- Timing: [Animation durations from theme]
+- Style: [Visual feedback style from theme]
+
+**Anti-Patterns to Avoid:**
+- [List interaction anti-patterns from theme, e.g., "No auto-play (ERP)", "Max 3 checkout steps (Ecommerce)"]
+
+**States to Implement:**
+[For each state from Section 3:]
+- State: [State name]
+- UI: [Visual appearance]
+- Transitions to: [Next states]
+
+**Transitions to Implement:**
+[For each transition from Section 4:]
+- From [State A] to [State B]
+- Trigger: [User action or system event]
+- Validation: [Validation rules]
+- Feedback: [Loading indicators, success/error messages]
+- Animation: [State transition animation]
+
+**Data Flow:**
+- API Endpoints: [List from Section 8]
+- Validation: [Client and server rules from Section 7]
+- Error Handling: [Error scenarios from Section 6]
+
+**Accessibility:**
+- Keyboard flow: [Tab order, shortcuts]
+- Screen reader: [State announcements from Section 10]
+- Focus management: [Focus trap, return focus]
+- ARIA live regions: [For dynamic updates]
+
+**Implementation Notes:**
+- State machine: [Recommended approach from Section 13]
+- Performance: [Debouncing, timeouts from Section 9]
+```
+
+**Customization:**
+1. Replace placeholders with actual values from spec sections
+2. Include all states and transitions from state diagram
+3. Add theme-specific animation durations and effects
+4. Reference component specs for UI element details
 
 ---
 

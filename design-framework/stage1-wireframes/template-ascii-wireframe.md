@@ -3,6 +3,23 @@
 ## Wireframe: [Screen Name]
 
 **ID:** WF-XXX | **Story:** ST-XXX | **Addresses:** AC-XXX, AC-YYY
+**Theme:** [mds | corporate | ecommerce | erp]
+**Theme File:** [Link to theme specification, e.g., themes/mds.md]
+
+---
+
+## Theme Context
+
+**Selected Theme:** [Theme Name]
+
+**Theme Impact on Layout:**
+- **Color Approach:** [e.g., "MDS uses magenta accents", "Corporate uses trust teal"]
+- **Visual Style:** [e.g., "Modern & bold", "Professional & organized", "Vibrant & conversion-focused", "Data-dense dashboard"]
+- **Component Patterns:** [e.g., "Hero with reveal animation (MDS)", "Mega menu navigation (Corporate)", "Prominent search + cart (Ecommerce)", "Compact header with breadcrumbs (ERP)"]
+
+**Reference Pattern Library:**
+- See [patterns/navigation-patterns.md](../patterns/navigation-patterns.md) for theme-specific navigation
+- See [patterns/README.md](../patterns/README.md) for all patterns
 
 ---
 

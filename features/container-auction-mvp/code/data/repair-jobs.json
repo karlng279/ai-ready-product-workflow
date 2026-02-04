@@ -1,0 +1,524 @@
+[
+    {
+        "id": "r1",
+        "containerId": "MSKU1234567",
+        "containerType": "20ft Standard",
+        "ownerId": "2",
+        "ownerName": "Jane Smith",
+        "location": "Rotterdam Port, Netherlands",
+        "description": "Door locking mechanism broken and hinges rusting. Unable to secure container properly. Needs immediate attention for security.",
+        "damageType": "Door/Lock",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T08:00:00Z",
+        "preferredDate": "2026-02-15",
+        "photos": [
+            "door-damage-1.jpg",
+            "hinge-rust.jpg"
+        ],
+        "estimatedCost": 450
+    },
+    {
+        "id": "r2",
+        "containerId": "TGHU9876543",
+        "containerType": "40ft High Cube",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Hamburg Depot, Germany",
+        "description": "Large dent in side panel from forklift collision. Structural integrity check needed. Panel may need replacement.",
+        "damageType": "Structural",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-03T10:00:00Z",
+        "preferredDate": "2026-02-20",
+        "photos": [
+            "side-dent-1.jpg",
+            "side-dent-2.jpg",
+            "side-dent-interior.jpg"
+        ],
+        "estimatedCost": 1200
+    },
+    {
+        "id": "r3",
+        "containerType": "20ft Refrigerated",
+        "containerId": "CXDU5554443",
+        "ownerId": "2",
+        "ownerName": "Jane Smith",
+        "location": "Singapore Terminal",
+        "description": "Flooring water damage in corner section. Needs partial floor replacement. Possible leak from roof seal.",
+        "damageType": "Floor",
+        "urgency": "medium",
+        "status": "quoted",
+        "postedAt": "2026-02-02T14:30:00Z",
+        "preferredDate": "2026-02-18",
+        "photos": [
+            "floor-rot-1.jpg",
+            "floor-rot-corner.jpg"
+        ],
+        "estimatedCost": 800,
+        "quotes": [
+            {
+                "providerId": "4",
+                "providerName": "FixItFast",
+                "amount": 850,
+                "timeline": "3 days",
+                "quotedAt": "2026-02-03T09:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": "r4",
+        "containerId": "HLBU2223344",
+        "containerType": "40ft Standard",
+        "ownerId": "5",
+        "ownerName": "Demo User",
+        "location": "Los Angeles, CA, USA",
+        "description": "Roof has multiple small holes causing water leaks. Needs welding and sealing. Interior shows water stains.",
+        "damageType": "Roof",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T06:00:00Z",
+        "preferredDate": "2026-02-12",
+        "photos": [
+            "roof-holes-1.jpg",
+            "roof-holes-2.jpg",
+            "water-stains-interior.jpg"
+        ],
+        "estimatedCost": 650
+    },
+    {
+        "id": "r5",
+        "containerId": "MSCU7788990",
+        "containerType": "20ft Open Top",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Shanghai Port, China",
+        "description": "Tarpaulin roof torn and needs replacement. Frame rails also showing rust. Complete roof system overhaul required.",
+        "damageType": "Roof",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-03T12:00:00Z",
+        "preferredDate": "2026-02-25",
+        "photos": [
+            "tarp-torn-1.jpg",
+            "frame-rust.jpg"
+        ],
+        "estimatedCost": 950
+    },
+    {
+        "id": "r6",
+        "containerId": "TCLU4455667",
+        "containerType": "40ft High Cube",
+        "ownerId": "1",
+        "ownerName": "John Doe",
+        "location": "Shenzhen Port, China",
+        "description": "Paint severely faded and peeling. Surface rust forming in multiple areas. Cosmetic refurbishment needed for resale.",
+        "damageType": "Cosmetic",
+        "urgency": "low",
+        "status": "open",
+        "postedAt": "2026-02-01T09:00:00Z",
+        "preferredDate": "2026-03-01",
+        "photos": [
+            "paint-fade-1.jpg",
+            "rust-spots.jpg"
+        ],
+        "estimatedCost": 1500
+    },
+    {
+        "id": "r7",
+        "containerId": "OOLU1122334",
+        "containerType": "20ft Flat Rack",
+        "ownerId": "4",
+        "ownerName": "Alice Johnson",
+        "location": "Dubai Port, UAE",
+        "description": "Folding mechanism jammed. Unable to collapse flat rack for storage. Hinge points need lubrication and possible replacement.",
+        "damageType": "Mechanical",
+        "urgency": "medium",
+        "status": "assigned",
+        "postedAt": "2026-01-31T11:00:00Z",
+        "preferredDate": "2026-02-14",
+        "photos": [
+            "hinge-jam-1.jpg",
+            "mechanism-close.jpg"
+        ],
+        "estimatedCost": 550,
+        "assignedTo": "4",
+        "assignedProvider": "FixItFast"
+    },
+    {
+        "id": "r8",
+        "containerId": "CMAU9988776",
+        "containerType": "40ft Refrigerated HC",
+        "ownerId": "1",
+        "ownerName": "John Doe",
+        "location": "Miami Port, FL, USA",
+        "description": "Refrigeration unit compressor making unusual noise. Temperature fluctuating. Needs diagnostic and possible compressor repair.",
+        "damageType": "Refrigeration",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T07:00:00Z",
+        "preferredDate": "2026-02-10",
+        "photos": [
+            "reefer-unit-1.jpg",
+            "compressor-close.jpg"
+        ],
+        "estimatedCost": 2500
+    },
+    {
+        "id": "r9",
+        "containerId": "MAEU5566778",
+        "containerType": "20ft Tank Container",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Antwerp Port, Belgium",
+        "description": "Valve assembly leaking. Needs gasket replacement and valve servicing. Food-grade certification re-inspection required after repair.",
+        "damageType": "Valve/Plumbing",
+        "urgency": "high",
+        "status": "quoted",
+        "postedAt": "2026-02-03T08:00:00Z",
+        "preferredDate": "2026-02-16",
+        "photos": [
+            "valve-leak-1.jpg",
+            "gasket-damage.jpg"
+        ],
+        "estimatedCost": 750,
+        "quotes": [
+            {
+                "providerId": "4",
+                "providerName": "FixItFast",
+                "amount": 780,
+                "timeline": "2 days",
+                "quotedAt": "2026-02-03T15:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": "r10",
+        "containerId": "SUDU3344556",
+        "containerType": "40ft Standard",
+        "ownerId": "2",
+        "ownerName": "Jane Smith",
+        "location": "Melbourne Port, Australia",
+        "description": "Corner post bent from impact. Affects stacking ability. Needs straightening or replacement for safe stacking.",
+        "damageType": "Structural",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-02T10:00:00Z",
+        "preferredDate": "2026-02-22",
+        "photos": [
+            "corner-bent-1.jpg",
+            "corner-bent-2.jpg"
+        ],
+        "estimatedCost": 1100
+    },
+    {
+        "id": "r11",
+        "containerId": "TRHU6677889",
+        "containerType": "20ft Offshore",
+        "ownerId": "4",
+        "ownerName": "Alice Johnson",
+        "location": "Aberdeen Port, UK",
+        "description": "DNV certification expired. Needs full inspection and recertification for offshore use. Minor welding repairs also required.",
+        "damageType": "Certification",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-01T13:00:00Z",
+        "preferredDate": "2026-02-28",
+        "photos": [
+            "cert-expired.jpg",
+            "weld-points.jpg"
+        ],
+        "estimatedCost": 1800
+    },
+    {
+        "id": "r12",
+        "containerId": "GESU8899001",
+        "containerType": "40ft Open Side",
+        "ownerId": "5",
+        "ownerName": "Demo User",
+        "location": "Busan Port, South Korea",
+        "description": "Side door track damaged. Door difficult to open and close. Track needs realignment and roller replacement.",
+        "damageType": "Door/Lock",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-02T08:00:00Z",
+        "preferredDate": "2026-02-19",
+        "photos": [
+            "track-damage-1.jpg",
+            "rollers-worn.jpg"
+        ],
+        "estimatedCost": 680
+    },
+    {
+        "id": "r13",
+        "containerId": "NYKU1122445",
+        "containerType": "20ft Standard",
+        "ownerId": "1",
+        "ownerName": "John Doe",
+        "location": "Savannah Port, GA, USA",
+        "description": "Floor boards rotting near door end. Needs floor panel replacement. Approximately 2 square meters affected.",
+        "damageType": "Floor",
+        "urgency": "medium",
+        "status": "completed",
+        "postedAt": "2026-01-28T09:00:00Z",
+        "preferredDate": "2026-02-10",
+        "completedAt": "2026-02-03T16:00:00Z",
+        "photos": [
+            "floor-rot-door.jpg",
+            "floor-rot-detail.jpg"
+        ],
+        "estimatedCost": 720,
+        "finalCost": 695,
+        "assignedTo": "4",
+        "assignedProvider": "FixItFast"
+    },
+    {
+        "id": "r14",
+        "containerId": "PONU3344667",
+        "containerType": "40ft Insulated",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Vancouver Port, Canada",
+        "description": "Insulation panels coming loose from ceiling. Needs re-adhesion and possible panel replacement. Affects temperature control.",
+        "damageType": "Insulation",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-03T11:00:00Z",
+        "preferredDate": "2026-02-21",
+        "photos": [
+            "insulation-loose-1.jpg",
+            "ceiling-panels.jpg"
+        ],
+        "estimatedCost": 890
+    },
+    {
+        "id": "r15",
+        "containerId": "CSQU5566889",
+        "containerType": "20ft Pallet Wide",
+        "ownerId": "2",
+        "ownerName": "Jane Smith",
+        "location": "Felixstowe Port, UK",
+        "description": "Rear door seal damaged. Not maintaining weather-tight integrity. Seal replacement needed around entire door frame.",
+        "damageType": "Seal/Gasket",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T09:00:00Z",
+        "preferredDate": "2026-02-13",
+        "photos": [
+            "seal-damage-1.jpg",
+            "seal-gap.jpg"
+        ],
+        "estimatedCost": 380
+    },
+    {
+        "id": "r16",
+        "containerId": "MSKU7788112",
+        "containerType": "40ft High Cube",
+        "ownerId": "5",
+        "ownerName": "Demo User",
+        "location": "Long Beach Port, CA, USA",
+        "description": "Ventilation grilles blocked and rusted. Needs cleaning and possible replacement for proper air circulation.",
+        "damageType": "Ventilation",
+        "urgency": "low",
+        "status": "open",
+        "postedAt": "2026-02-01T10:00:00Z",
+        "preferredDate": "2026-02-26",
+        "photos": [
+            "vent-blocked-1.jpg",
+            "vent-rust.jpg"
+        ],
+        "estimatedCost": 320
+    },
+    {
+        "id": "r17",
+        "containerId": "HLCU9900223",
+        "containerType": "20ft Dangerous Goods",
+        "ownerId": "4",
+        "ownerName": "Alice Johnson",
+        "location": "Jebel Ali Port, UAE",
+        "description": "Hazmat placards faded and need replacement. Interior coating showing wear. Needs recoating for chemical resistance.",
+        "damageType": "Coating/Paint",
+        "urgency": "medium",
+        "status": "quoted",
+        "postedAt": "2026-02-02T12:00:00Z",
+        "preferredDate": "2026-02-24",
+        "photos": [
+            "placards-faded.jpg",
+            "coating-wear.jpg"
+        ],
+        "estimatedCost": 1250,
+        "quotes": [
+            {
+                "providerId": "4",
+                "providerName": "FixItFast",
+                "amount": 1280,
+                "timeline": "5 days",
+                "quotedAt": "2026-02-03T10:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": "r18",
+        "containerId": "TCNU4455778",
+        "containerType": "40ft Standard",
+        "ownerId": "6",
+        "ownerName": "Karl Nguyen",
+        "location": "Ho Chi Minh City Port, Vietnam",
+        "description": "Multiple rust spots on exterior walls. Needs rust treatment, grinding, and repainting. Approximately 30% of surface affected.",
+        "damageType": "Cosmetic",
+        "urgency": "low",
+        "status": "open",
+        "postedAt": "2026-01-30T08:00:00Z",
+        "preferredDate": "2026-03-05",
+        "photos": [
+            "rust-exterior-1.jpg",
+            "rust-exterior-2.jpg",
+            "rust-detail.jpg"
+        ],
+        "estimatedCost": 1650
+    },
+    {
+        "id": "r19",
+        "containerId": "OOLU6677990",
+        "containerType": "20ft Ventilated",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Santos Port, Brazil",
+        "description": "Ventilation louvers damaged and not opening properly. Needs mechanism repair and louver replacement.",
+        "damageType": "Ventilation",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-03T07:00:00Z",
+        "preferredDate": "2026-02-17",
+        "photos": [
+            "louvers-damaged-1.jpg",
+            "mechanism-broken.jpg"
+        ],
+        "estimatedCost": 520
+    },
+    {
+        "id": "r20",
+        "containerId": "CMAU1122556",
+        "containerType": "40ft Double Door",
+        "ownerId": "2",
+        "ownerName": "Jane Smith",
+        "location": "Auckland Port, New Zealand",
+        "description": "Both door sets need lock bar replacement. Current bars bent and difficult to operate. Safety concern for loading operations.",
+        "damageType": "Door/Lock",
+        "urgency": "high",
+        "status": "assigned",
+        "postedAt": "2026-02-01T14:00:00Z",
+        "preferredDate": "2026-02-11",
+        "photos": [
+            "lockbar-bent-1.jpg",
+            "lockbar-bent-2.jpg"
+        ],
+        "estimatedCost": 580,
+        "assignedTo": "4",
+        "assignedProvider": "FixItFast"
+    },
+    {
+        "id": "r21",
+        "containerId": "MAEU3344778",
+        "containerType": "20ft Standard",
+        "ownerId": "5",
+        "ownerName": "Demo User",
+        "location": "Kaohsiung Port, Taiwan",
+        "description": "Interior ceiling has water stains indicating past leak. Needs inspection for hidden damage and possible roof seal replacement.",
+        "damageType": "Roof",
+        "urgency": "medium",
+        "status": "open",
+        "postedAt": "2026-02-02T09:00:00Z",
+        "preferredDate": "2026-02-20",
+        "photos": [
+            "ceiling-stains-1.jpg",
+            "ceiling-stains-2.jpg"
+        ],
+        "estimatedCost": 450
+    },
+    {
+        "id": "r22",
+        "containerId": "SUDU5566990",
+        "containerType": "40ft HC Office",
+        "ownerId": "4",
+        "ownerName": "Alice Johnson",
+        "location": "Perth, Australia",
+        "description": "Electrical wiring needs inspection and certification. Some outlets not working. Safety inspection required for office use.",
+        "damageType": "Electrical",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T10:00:00Z",
+        "preferredDate": "2026-02-14",
+        "photos": [
+            "electrical-panel.jpg",
+            "outlet-issue.jpg"
+        ],
+        "estimatedCost": 850
+    },
+    {
+        "id": "r23",
+        "containerId": "TRHU7788223",
+        "containerType": "20ft Half Height",
+        "ownerId": "3",
+        "ownerName": "Bob Wilson",
+        "location": "Durban Port, South Africa",
+        "description": "Floor reinforcement bars showing stress cracks. Needs welding reinforcement for continued heavy cargo use.",
+        "damageType": "Structural",
+        "urgency": "high",
+        "status": "quoted",
+        "postedAt": "2026-02-03T13:00:00Z",
+        "preferredDate": "2026-02-15",
+        "photos": [
+            "floor-cracks-1.jpg",
+            "reinforcement-bars.jpg"
+        ],
+        "estimatedCost": 980,
+        "quotes": [
+            {
+                "providerId": "4",
+                "providerName": "FixItFast",
+                "amount": 1050,
+                "timeline": "4 days",
+                "quotedAt": "2026-02-04T08:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": "r24",
+        "containerId": "GESU9900445",
+        "containerType": "40ft Refrigerated",
+        "ownerId": "1",
+        "ownerName": "John Doe",
+        "location": "Yokohama Port, Japan",
+        "description": "Refrigeration unit control panel displaying error codes. Needs diagnostic scan and sensor replacement.",
+        "damageType": "Refrigeration",
+        "urgency": "high",
+        "status": "open",
+        "postedAt": "2026-02-04T11:00:00Z",
+        "preferredDate": "2026-02-12",
+        "photos": [
+            "control-panel-error.jpg",
+            "error-codes.jpg"
+        ],
+        "estimatedCost": 1200
+    },
+    {
+        "id": "r25",
+        "containerId": "NYKU2233667",
+        "containerType": "20ft Standard",
+        "ownerId": "6",
+        "ownerName": "Karl Nguyen",
+        "location": "Norfolk Port, VA, USA",
+        "description": "Complete refurbishment needed. Rust removal, floor repair, paint, and seal replacement. Bulk pricing available for multiple units.",
+        "damageType": "Complete Refurb",
+        "urgency": "low",
+        "status": "open",
+        "postedAt": "2026-01-29T07:00:00Z",
+        "preferredDate": "2026-03-10",
+        "photos": [
+            "refurb-before-1.jpg",
+            "refurb-before-2.jpg"
+        ],
+        "estimatedCost": 2200
+    }
+]
